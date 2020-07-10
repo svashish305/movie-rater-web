@@ -20,7 +20,7 @@ export class API {
     }
 
     static getMovies(token) {
-        return fetch("${process.env.REACT_APP_API_URL}/api/movies/", {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/movies/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
